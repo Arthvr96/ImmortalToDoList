@@ -1,0 +1,44 @@
+{
+  "extends": ["airbnb", "react-app", "react-app/jest", "plugin:prettier/recommended"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error", { "singleQuote": true }],
+    "import/first": 0,
+    "react/jsx-filename-extension": 0,
+    "import/prefer-default-export": 0,
+    "no-return-assign": 0,
+    "react-hooks/exhaustive-deps": 0,
+    "react/require-default-props": 0,
+    "no-nested-ternary": 0,
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ]
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["./src"],
+        "extensions": [".js"]
+      }
+    }
+  }
+}
