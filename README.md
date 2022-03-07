@@ -1,6 +1,6 @@
 # Immortal to do list
 
-## Navigatin
+## Navigation
 * [Setup](#setup)
 * [General](#general)
 * [Guide](#guide)
