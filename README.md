@@ -36,8 +36,8 @@ I know very complicated but I hope you can keep up.
 <br>
 <strong>To-do-list route</strong><br>
 
-* View is split to 2 sections. Tasks to do and tasks complete.
-* You can delete tasks or set competed. 
+* View is split to 2 sections. `Tasks-to-do` and `tasks-complete`.
+* You can delete tasks or set completed. 
 * If the description is too long it is cut off and a read more button appears `(WOW MAGIC)`
 * You can sort task by time adding or complexity level. `(WOW BLACK MAGIC)`
 
