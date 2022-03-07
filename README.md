@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Immortal to do list
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Navigatin
+* [Setup](#setup)
+* [General](#general)
+* [Guide](#guide)
 
-## Available Scripts
+## Setup
 
-In the project directory, you can run:
+Created by create-react-app.
 
-### `npm start`
+* git clone repo
+* npm install
+* npm run start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## General
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+An immortal project that everyone has, including me.
+It's not the most banal to-do-list but still enough banal<br>
+Luckily it looks even worse than it works!<br>
+<strong>Once you see her. Remember, I warned 💩</strong>.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Guide
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+There are 2 routes. to do list and form for adding tasks. <br>
+I know very complicated but I hope you can keep up.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Features: 
 
-### `npm run eject`
+<strong>Add task route</strong>
+* In the form you can create tasks *(surprising)*. You can add title, description and choose complexity level.
+###`☕️Take a break here because the next route has much more functionality!`
+<br>
+<strong>To-do-list route</strong>
+* View is split to 2 sections. Tasks to do and tasks complete.
+* You can delete tasks or set competed. 
+* If the description is too long it is cut off and a read more button appears `(WOW MAGIC)`
+* You can sort task by time adding or complexity level. `(WOW BLACK MAGIC)`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#breathtaking, isn't it ? Give me job. 
