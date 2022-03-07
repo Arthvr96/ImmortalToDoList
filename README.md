@@ -25,14 +25,14 @@ Luckily it looks even worse than it works!<br>
 
 ## Guide
 
-There are 2 routes. to do list and form for adding tasks. <br>
+There are 2 routes. `To-Do-List` and `Form` for adding tasks. <br>
 I know very complicated but I hope you can keep up.
 
 ### Features: 
 
 <strong>Add task route</strong>
 * In the form you can create tasks *(surprising)*. You can add title, description and choose complexity level.
-###`☕️Take a break here because the next route has much more functionality!`
+`☕️Take a break here because the next route has much more functionality!`
 <br>
 <strong>To-do-list route</strong>
 * View is split to 2 sections. Tasks to do and tasks complete.
