@@ -7,10 +7,10 @@ import { Description } from 'components/atoms/Description/Description';
 import { Wrapper, ButtonsWrapper } from './TaskListItem.style';
 
 const TaskListItem = ({
-  values: { nameTask, description, type, index },
+  values: { nameTask, description, type, id },
   handleDelete,
-  handleComplite,
-  compliteTasks,
+  handleComplete,
+  completedTask,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [color, setColor] = useState('');
@@ -42,7 +42,7 @@ const TaskListItem = ({
   }, []);
 
   return (
-    <Wrapper color={compliteTasks ? '#949494' : color}>
+    <Wrapper color={completedTask ? '#949494' : color}>
       <div>
         <Title>{nameTask}</Title>
         <Description isOpen={isOpen}>{description}</Description>
@@ -50,12 +50,12 @@ const TaskListItem = ({
           {isOpen ? 'Read less..' : 'Read more..'}
         </ButtonReadMore>
       </div>
-      {!compliteTasks ? (
+      {!completedTask ? (
         <ButtonsWrapper>
-          <Button onClick={(e) => handleComplite(index)} bg="green">
+          <Button onClick={() => handleComplete(id)} bg="green">
             ✔
           </Button>
-          <Button onClick={(e) => handleDelete(index)} bg="red">
+          <Button onClick={() => handleDelete(id)} bg="red">
             x
           </Button>
         </ButtonsWrapper>
@@ -71,9 +71,9 @@ TaskListItem.propTypes = {
     nameTask: PropTypes.string,
     description: PropTypes.string,
     type: PropTypes.string,
-    index: PropTypes.string,
+    id: PropTypes.string,
   }),
   handleDelete: PropTypes.func,
-  handleComplite: PropTypes.func,
-  compliteTasks: PropTypes.bool,
+  handleComplete: PropTypes.func,
+  completedTask: PropTypes.bool,
 };

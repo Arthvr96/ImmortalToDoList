@@ -8,26 +8,30 @@ import GlobalContextProvider from 'providers/GlobalContextProvider';
 import ToDoList from 'components/views/ToDoList/ToDoList';
 import AddTask from 'components/views/AddTask/AddTask';
 import NavigationTemplate from 'components/templates/NavigationTemplate/NavigationTemplate';
+import { Provider } from 'react-redux';
+import { store } from 'store/index';
 
 const Root = () => (
   <SEO>
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <GlobalContextProvider>
-        <Router>
-          <NavigationTemplate>
-            <Switch>
-              <Route path="/addTask">
-                <AddTask />
-              </Route>
-              <Route path="/">
-                <ToDoList />
-              </Route>
-            </Switch>
-          </NavigationTemplate>
-        </Router>
-      </GlobalContextProvider>
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <GlobalContextProvider>
+          <Router>
+            <NavigationTemplate>
+              <Switch>
+                <Route path="/addTask">
+                  <AddTask />
+                </Route>
+                <Route path="/">
+                  <ToDoList />
+                </Route>
+              </Switch>
+            </NavigationTemplate>
+          </Router>
+        </GlobalContextProvider>
+      </ThemeProvider>
+    </Provider>
   </SEO>
 );
 

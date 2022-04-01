@@ -6,13 +6,15 @@ import FieldText from 'components/molecues/FieldText/FieldText';
 import FieldTextArea from 'components/molecues/FieldTextArea/FieldTextArea';
 import FieldSelect from 'components/molecues/FieldSelect/FieldSelect';
 import { ATCButton } from 'components/atoms/ATCButton/ATCButton';
+import { useDispatch } from 'react-redux';
 import { StyledForm } from './FormAddNewTask.style';
+import { addTask } from '../../../store';
 
 const options = ['Easy', 'Medium', 'Hard', 'HardAsFuck'];
 
 const FormAddNewTask = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const { handleSetData } = useContext(GlobalContext);
+  const dispatch = useDispatch();
 
   const initialValues = {
     nameTask: '',
@@ -20,8 +22,13 @@ const FormAddNewTask = () => {
     type: 'Easy',
   };
 
+  const handleAddTask = (nameTask, description, type) => {
+    dispatch(addTask({ nameTask, description, type }));
+  };
+
   const onSubmit = (values, { setSubmitting, resetForm }) => {
-    handleSetData(values);
+    const { nameTask, description, type } = values;
+    handleAddTask(nameTask, description, type);
     setIsVisible(true);
     window.setTimeout(() => {
       setSubmitting(false);
