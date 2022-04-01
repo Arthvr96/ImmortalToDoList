@@ -92,4 +92,8 @@ const tasksReducer = (state = initialState, action) => {
   }
 };
 
-export const store = createStore(tasksReducer);
+export const store = createStore(
+  tasksReducer,
+  // eslint-disable-next-line no-underscore-dangle
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+);
